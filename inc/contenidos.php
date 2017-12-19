@@ -91,7 +91,14 @@ function ContenidoHijoPost($page,$perpage){
          while($the_query->have_posts()) : $the_query->the_post();  ?>
         <div class="lista">
             <a class="thumb" href="<?php the_permalink(); ?>">
-              <?php the_post_thumbnail('full'); ?>
+              <?php
+              if(has_post_thumbnail()){
+                the_post_thumbnail('full');
+              }
+              else{ ?>
+                <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
+              <?php }
+              ?>
               <div class="texto"><span><?php echo $title; ?></span></div>
             </a>
             <!-- div class="exe"><?php // excerpt('20'); ?> </div -->
@@ -144,12 +151,18 @@ function contenidoPaginaPorNombre($pagename){
     ?>
     <?php
     $the_query = new WP_Query(create_pagename($pagename));
-        $id = get_permalink($page);
-        $title = get_the_title($page );
+        $id = get_permalink($pagename);
+        $title = get_the_title($pagename );
          while($the_query->have_posts()) : $the_query->the_post();  ?>
          <div class="lista">
              <a class="thumb" href="<?php the_permalink(); ?>">
-               <?php the_post_thumbnail('full'); ?>
+            <?php
+              if(has_post_thumbnail()){
+                the_post_thumbnail('full');
+              }
+              else{ ?>
+                <img class="attachment-full size-full wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
+              <?php }   ?>
                <div class="texto"><span><?php the_title(); ?></span></div>
              </a>
              <!-- div class="exe"><?php // excerpt('20'); ?> </div -->

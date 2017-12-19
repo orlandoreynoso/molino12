@@ -29,12 +29,12 @@
       color: #293449;
       font-weight: bold; }
       .m-contenido-secciones .titulos-general h3::after {
-        content: "";
+        content: '';
         display: block;
         height: 3px;
         width: calc(var(--width)/2);
         position: absolute;
-        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
         bottom: -0.8em;
         background-color: #46b271;
         z-index: 100; }
@@ -55,7 +55,7 @@
           width: var(--sizem); } }
       .m-contenido-secciones .listado-entradas .lista a {
         color: #293449;
-        font-family: "Oswald", sans-serif;
+        font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         font-size: 0.9em;
         text-decoration: none;
@@ -92,7 +92,7 @@
           width: 100%;
           height: auto; }
 
-/*=============== Portada ================ */
+/*=============== Portada ================*/
 .m-cover-portada {
   background-position: center;
   background-size: cover; }
@@ -157,7 +157,7 @@
   text-align: center;
   padding: 0px 0px 30px 0px; }
 
-/*=================== AGrupaciones =================================================== */
+/*=================== AGrupaciones ===================================================*/
 .msc-agrupaciones {
   background-color: #293449;
   padding: 30px; }
@@ -168,7 +168,7 @@
       font-size: 1.2em;
       color: #009FFF;
       text-transform: uppercase;
-      font-family: "Oswald", sans-serif;
+      font-family: 'Oswald', sans-serif;
       margin: 30px 0px 20px 0px;
       padding: 0px;
       font-weight: 400; }
@@ -213,7 +213,7 @@
           .msc-agrupaciones .c-agrupaciones .list .todo .ir-agrupacion h5 {
             font-size: 1em;
             line-height: 1.5em;
-            font-family: "Open Sans", Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             margin-left: 5px;
             font-weight: 600;
             color: #009FFF; }
@@ -235,9 +235,9 @@
                   height: auto; } }
               .msc-agrupaciones .c-agrupaciones .list .todo .ir-agrupacion .thumb img:hover {
                 filter: alpha(opacity=70);
-                -moz-opacity: 1;
+                -moz-opacity: 1.0;
                 opacity: 0.7;
-                -khml-opacity: 1;
+                -khml-opacity: 1.0;
                 transition: 0.5s ease; }
             @media screen and (max-width: 640px) {
               .msc-agrupaciones .c-agrupaciones .list .todo .ir-agrupacion .thumb {
@@ -261,7 +261,7 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px; }
 
 header {
@@ -274,7 +274,7 @@ a {
   a:hover {
     color: #009FFF; }
 
-/*========= Header main ===================== */
+/*========= Header main =====================*/
 .m-header {
   margin: 0px;
   padding: 0px;
@@ -297,9 +297,9 @@ a {
         vertical-align: top; }
         .m-header .ls .logo img:hover {
           filter: alpha(opacity=80);
-          -moz-opacity: 1;
+          -moz-opacity: 1.0;
           opacity: calc(80 / 100);
-          -khml-opacity: 1;
+          -khml-opacity: 1.0;
           transition: 0.5s ease;
           background-color: #ffffff; }
 
@@ -315,7 +315,7 @@ a {
   .m-header .sm .ubicacion {
     text-align: right;
     width: 100%;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin-bottom: 5px;
     margin-right: 11%; }
     .m-header .sm .ubicacion .icon {
@@ -387,6 +387,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media screen and (max-width: 640px) {
   .e-menu .navbar-me {
     display: none; } }
+
 .e-menu .navbar-me ul.menu {
   display: flex;
   flex-flow: row;
@@ -402,13 +403,13 @@ input[type=number]::-webkit-outer-spin-button {
       transition: 0.5s ease; }
       .e-menu .navbar-me ul.menu li:hover:after {
         width: 100%;
-        content: "";
+        content: '';
         display: block;
         background-color: #009FFF;
         height: 3px;
         width: calc(var(--ttw)/2);
         position: absolute;
-        left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 );
+        left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2);
         bottom: 0px;
         z-index: 100;
         transition: 0.5s ease; }
@@ -453,6 +454,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media screen and (min-width: 640px) {
   .e-menu .navbar {
     display: none; } }
+
 .e-menu .navbar .cuadro-menu {
   padding: 20px;
   display: flex;
@@ -483,6 +485,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 70px; }
     .e-menu .navbar .cuadro-menu .logo img {
       width: 100%; }
+
 .e-menu .navbar button.navbar-toggler {
   border: 1px solid #46b271;
   background-color: #46b271;
@@ -491,6 +494,7 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none; }
   .e-menu .navbar button.navbar-toggler .navbar-toggler-icon {
     color: #46b271; }
+
 .e-menu .navbar .navbar-brand {
   float: left; }
   .e-menu .navbar .navbar-brand img {
@@ -524,7 +528,7 @@ input[type=number]::-webkit-outer-spin-button {
     .slide .metaslider .flexslider {
       padding: 0px;
       margin: 0px;
-      background-color: green; }
+      background-color: #ffffff; }
       .slide .metaslider .flexslider .flex-control-nav {
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.5);
@@ -546,7 +550,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0px auto;
     vertical-align: top; }
 
-/*======= vien de coverpage.sass */
+/*======= vien de coverpage.sass*/
 .m-iparroquial {
   background-color: #f2f2f2;
   box-sizing: border-box;
@@ -565,17 +569,17 @@ input[type=number]::-webkit-outer-spin-button {
       color: #293449;
       font-weight: bold; }
       .m-iparroquial .titulo-anuncios h3::after {
-        content: "";
+        content: '';
         display: block;
         height: 3px;
         width: calc(var(--width)/2);
         position: absolute;
-        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
         bottom: -0.8em;
         background-color: #b20013;
         z-index: 100; }
 
-/*=============== cuadro de selecciona tu iglesia ==== */
+/*=============== cuadro de selecciona tu iglesia ====*/
 .m-iparroquial #iglesia {
   min-height: 50px;
   display: flex;
@@ -600,7 +604,7 @@ input[type=number]::-webkit-outer-spin-button {
         width: var(--sizem); } }
     .m-iparroquial #iglesia #div1 a {
       color: #293449;
-      font-family: "Oswald", sans-serif;
+      font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
       text-decoration: none;
       padding: 0px 0px 8px 0px;
@@ -624,7 +628,7 @@ input[type=number]::-webkit-outer-spin-button {
           transition: 0.5s ease;
           opacity: 0.5; }
 
-/*=============================================================== */
+/*===============================================================*/
 .section-bienvenida {
   width: var(--sizem);
   padding: 20px;
@@ -644,12 +648,12 @@ input[type=number]::-webkit-outer-spin-button {
       color: #293449;
       font-weight: bold; }
       .section-bienvenida .i-bienvenida h3::after {
-        content: "";
+        content: '';
         display: block;
         height: 3px;
         width: calc(var(--width)/2);
         position: absolute;
-        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
         bottom: -0.8em;
         background-color: #b20013;
         z-index: 100; }
@@ -688,7 +692,7 @@ input[type=number]::-webkit-outer-spin-button {
             .con-general .con .bread .mapeo span a:hover {
               color: #46b271; }
 
-/*=========remodelacion============= */
+/*=========remodelacion=============*/
 .m-remodelacion {
   background-color: #ffffff;
   padding: 20px;
@@ -706,12 +710,12 @@ input[type=number]::-webkit-outer-spin-button {
       color: #293449;
       font-weight: bold; }
       .m-remodelacion .title-recomendacion h3::after {
-        content: "";
+        content: '';
         display: block;
         height: 3px;
         width: calc(var(--width)/2);
         position: absolute;
-        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
         bottom: -0.8em;
         background-color: #b20013;
         z-index: 100; }
@@ -721,7 +725,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 10px;
     display: block; }
 
-/*===================== Entradas recientes cover page ==================== */
+/*===================== Entradas recientes cover page ====================*/
 .m-entradas-recientes {
   width: var(--sizem);
   padding: 20px;
@@ -739,12 +743,12 @@ input[type=number]::-webkit-outer-spin-button {
       color: #293449;
       font-weight: bold; }
       .m-entradas-recientes .titulo-entradas-reciente h3::after {
-        content: "";
+        content: '';
         display: block;
         height: 3px;
         width: calc(var(--width)/2);
         position: absolute;
-        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
         bottom: -0.8em;
         background-color: #b20013;
         z-index: 100; }
@@ -764,7 +768,7 @@ input[type=number]::-webkit-outer-spin-button {
           width: var(--sizem); } }
       .m-entradas-recientes .listado-entradas .lista a {
         color: #293449;
-        font-family: "Oswald", sans-serif;
+        font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         font-size: 0.9em;
         text-decoration: none;
@@ -890,6 +894,7 @@ input[type=number]::-webkit-outer-spin-button {
       .con-general .con .interiores-comunidad .titulos-page,
       .con-general .con .interior-horarios-misa .titulos-page {
         padding-right: 10px; } }
+
 .con-general .side {
   padding-top: 20px; }
   .con-general .side .entradas {
@@ -902,9 +907,10 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 1.2em;
         color: #ffffff;
         text-transform: uppercase;
-        font-family: "Oswald", sans-serif;
+        font-family: 'Oswald', sans-serif;
         margin: 0px;
         padding: 0px; }
+
 .con-general .side .entradas .recientes {
   margin-bottom: 20px;
   padding-left: 10px;
@@ -934,9 +940,9 @@ input[type=number]::-webkit-outer-spin-button {
         width: 90%; }
         .con-general .side .entradas .recientes .list .thumb img:hover {
           filter: alpha(opacity=50);
-          -moz-opacity: 1;
+          -moz-opacity: 1.0;
           opacity: 0.5;
-          -khml-opacity: 1;
+          -khml-opacity: 1.0;
           transition: 0.5s ease;
           box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
 
@@ -994,7 +1000,7 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 4px;
         margin: 4px; }
       .navigation .pagenavi .pages:last {
-        content: ">>"; }
+        content: '>>'; }
     .navigation .pagenavi .current {
       padding: 4px;
       background-color: #b20013;
@@ -1070,12 +1076,12 @@ input[type=number]::-webkit-outer-spin-button {
         color: #293449;
         font-weight: bold; }
         .agrupaciones-desglose .c-agrupaciones .titulo-pastorales h3::after {
-          content: "";
+          content: '';
           display: block;
           height: 3px;
           width: calc(var(--width)/2);
           position: absolute;
-          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
           bottom: -0.8em;
           background-color: #b20013;
           z-index: 100; }
@@ -1134,9 +1140,9 @@ input[type=number]::-webkit-outer-spin-button {
                   height: auto; } }
               .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb img:hover {
                 filter: alpha(opacity=70);
-                -moz-opacity: 1;
+                -moz-opacity: 1.0;
                 opacity: 0.7;
-                -khml-opacity: 1;
+                -khml-opacity: 1.0;
                 transition: 0.5s ease; }
             @media screen and (max-width: 640px) {
               .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb {
@@ -1164,7 +1170,7 @@ input[type=number]::-webkit-outer-spin-button {
           .agrupaciones-desglose .c-agrupaciones .list .todo .ir-agrupacion h5 {
             font-size: 1em;
             line-height: 1.5em;
-            font-family: "Open Sans", Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             margin-left: 5px;
             font-weight: 600;
             color: #46b271; }
@@ -1184,9 +1190,9 @@ input[type=number]::-webkit-outer-spin-button {
                   height: auto; } }
               .agrupaciones-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb img:hover {
                 filter: alpha(opacity=70);
-                -moz-opacity: 1;
+                -moz-opacity: 1.0;
                 opacity: 0.7;
-                -khml-opacity: 1;
+                -khml-opacity: 1.0;
                 transition: 0.5s ease; }
             @media screen and (max-width: 640px) {
               .agrupaciones-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb {
@@ -1195,7 +1201,7 @@ input[type=number]::-webkit-outer-spin-button {
         .agrupaciones-desglose .c-agrupaciones .list .todo .exe {
           margin-top: 10px; }
 
-/*==================== */
+/*====================*/
 .con-general .con .interiores-comunidad {
   padding-top: 20px; }
   .con-general .con .interiores-comunidad h1 {
@@ -1212,6 +1218,7 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 1.625em;
     font-size: 1.0625em;
     color: #302f2f; }
+
 .con-general .con .m-comunidades {
   width: 100%;
   box-sizing: border-box;
@@ -1247,9 +1254,9 @@ input[type=number]::-webkit-outer-spin-button {
           overflow: hidden; }
         .con-general .con .m-comunidades .list .todo .ir-agrupacion:hover img {
           filter: alpha(opacity=50);
-          -moz-opacity: 1;
+          -moz-opacity: 1.0;
           opacity: 0.5;
-          -khml-opacity: 1;
+          -khml-opacity: 1.0;
           transition: 0.5s ease;
           box-shadow: 0 0 8px rgba(0, 120, 240, 0.8);
           transform: scale(1.5); }
@@ -1273,8 +1280,8 @@ input[type=number]::-webkit-outer-spin-button {
             width: 100%;
             height: 150px; }
 
-/*=== sidebar comunidades ============ */
-/*==================== */
+/*=== sidebar comunidades ============*/
+/*====================*/
 .con-general .side-comunidades {
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -1366,12 +1373,12 @@ input[type=number]::-webkit-outer-spin-button {
         color: #293449;
         font-weight: bold; }
         .presentaciones-desglose .c-presentaciones .titulo-pastorales h3::after {
-          content: "";
+          content: '';
           display: block;
           height: 3px;
           width: calc(var(--width)/2);
           position: absolute;
-          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
           bottom: -0.8em;
           background-color: #b20013;
           z-index: 100; }
@@ -1430,9 +1437,9 @@ input[type=number]::-webkit-outer-spin-button {
           height: auto; } }
       .presentaciones-desglose .c-presentaciones .list .todo .enlace .thumb img:hover {
         filter: alpha(opacity=70);
-        -moz-opacity: 1;
+        -moz-opacity: 1.0;
         opacity: 0.7;
-        -khml-opacity: 1;
+        -khml-opacity: 1.0;
         transition: 0.5s ease; }
     .presentaciones-desglose .c-presentaciones .list .todo .enlace .thumb img {
       transition: 0.92s ease; }
@@ -1451,7 +1458,7 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: #293449; }
     .presentaciones-desglose .c-presentaciones .list .todo .enlace .textos .titulo {
       width: 100%;
@@ -1493,8 +1500,47 @@ input[type=number]::-webkit-outer-spin-button {
         color: #fcf7bf; }
       .presentaciones-desglose .c-presentaciones .list .todo .enlace .textos .cuadro-fecha .fecha {
         color: #fcf7bf; }
+
 .presentaciones-desglose .c-presentaciones .list .todo .exe {
   margin-top: 10px; }
+
+.contenido-wpq {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  width: var(--sizem); }
+  .contenido-wpq .list {
+    width: calc(var(--sizem)/3);
+    min-height: 150px;
+    text-align: center;
+    box-sizing: border-box; }
+    .contenido-wpq .list a {
+      color: #293449;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      text-decoration: none;
+      padding: 0px 0px 8px 0px;
+      display: block;
+      background-color: #ffffff;
+      margin: 10px; }
+      .contenido-wpq .list a h3 {
+        margin-top: 10px;
+        display: block;
+        font-size: 1.2em; }
+      .contenido-wpq .list a:hover {
+        color: #b20013;
+        transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        -webkit-transition: 0.5s ease; }
+      .contenido-wpq .list a .thumb img {
+        width: 100%;
+        height: 178px;
+        background-size: cover; }
+        .contenido-wpq .list a .thumb img:hover {
+          transition: 0.5s ease;
+          opacity: 0.5; }
 
 #totop {
   display: none;
@@ -1527,7 +1573,7 @@ footer {
       text-align: center;
       color: #ffffff;
       line-height: 1.5em;
-      font-family: "Economica-Bold";
+      font-family: 'Economica-Bold';
       text-shadow: 1px 2px 1px #000;
       font-size: 1.2em; }
       footer #pie .group a {
@@ -1537,6 +1583,4 @@ footer {
           color: #009FFF;
           transition: 0.5s ease; }
 
-/*================================= */
-
-/*# sourceMappingURL=estilo.css.map */
+/*=================================*/
