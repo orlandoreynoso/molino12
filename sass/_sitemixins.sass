@@ -1,3 +1,23 @@
+@mixin buscador_cover()
+	.search
+		color: $blanco
+		.searchbar
+			margin: 0px auto
+			display: flex
+			justify-content: center
+			input[type="text"]
+				border: 1px solid $m-verde
+				outline: none
+				transition: 0.5s ease
+				&:hover
+					border: 1px solid $celeste
+			input[type="submit"],
+			button[type="submit"]
+				color: $m-verde
+				transition: 0.5s ease
+				outline: none
+				&:hover
+					color: $celeste
 @mixin entraditas($columnas)
 	.list		
 		width: calc(var(--sizem)/#{$columnas})
@@ -114,11 +134,11 @@
 		max-width: 100%
 		height: auto
 	.alignleft
-		float: left
-		margin: 20px 20px 20px 0px
-	.alignright
-		float: right
-		margin: 20px 0px 20px 20px
+		float: left !important
+		margin: 5px 20px 20px 0px
+	.alignright 
+		float: right !important
+		margin: 5px 0px 20px 20px
 	.aligncenter
 		width: 100%
 		height: auto

@@ -136,6 +136,15 @@ if (function_exists('register_sidebar')) {
             'id' => 'sidebar'
     ));
 }
+
+if (function_exists('register_sidebar')) {
+    register_sidebar(
+        array(
+            'name' => 'horarios',
+            'id' => 'horarios'
+    ));
+}
+
 include (TEMPLATEPATH . '/libs/paginacion.php'); 
 paginacion();
 ?>

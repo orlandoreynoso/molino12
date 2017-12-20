@@ -109,7 +109,15 @@
           line-height: 1.5em
   .div-bienvenida
     text-align: center
+    padding: 20px
     @media screen and (min-width: 760px) /* 760 al infinito*/
       margin-top: 50px
     .texto-bienvenida
       color: $blanco
+      .buscador-cover
+        button[type="submit"]
+          color: $celeste
+          &:hover
+            color: $m-verde
+        @media screen and ( max-width: 639px )/* ocultarlo cuando sea 640px a 0px =====*/        
+          display: none

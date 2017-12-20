@@ -9,4 +9,7 @@
     wp_reset_postdata();
     ?>
   </div>
+  <div class="buscador-cover">
+    <?php get_template_part( 'template/header','buscador'); ?>
+  </div>
 </div>

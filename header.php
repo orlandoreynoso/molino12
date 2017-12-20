@@ -13,7 +13,7 @@
 	$clave = get_the_ID();
 	echo $clave;*/
 
-		if(is_page('5')){
+		if(is_page('Inicio')){
 			get_template_part( 'template/portada','header');
 		}
 
