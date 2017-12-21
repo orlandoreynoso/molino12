@@ -166,6 +166,12 @@
   padding: 80px 0px;
   color: #ffffff;
   background-color: #293449; }
+  @media screen and (min-width: 760px) {
+    .sitebienvenida {
+      padding: 80px 20px 80px 20px;
+      background-image: url("../images/header-molino.jpg");
+      background-position: center;
+      background-size: cover; } }
   .sitebienvenida .slogan {
     margin-top: 20px;
     text-align: center;
