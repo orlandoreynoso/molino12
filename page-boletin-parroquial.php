@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: Contenido y desglose
+  Template Name: Boletin Parroquial
   Template Post Type: post, page, product, agrupaciones
 */
  get_header();
@@ -20,7 +20,7 @@
             </div>
 
             <div class="interiores">
-              <?php //  echo  'estoy en page';      ?>
+              <?php // echo  'estoy en page la pagina de boletines parroquiales....a jua';      ?>
               <?php
                 while ( have_posts() ) : the_post();
                   the_content();
@@ -40,8 +40,10 @@
             echo "</pre>"; */
 
               ?>
-          <h3>Más contenido de Interés</h3>
-          <div class="agrupaciones-desglose">
+          <div class="contenido-boletines">
+            <div class="titulo-desglose-boletines">
+              <h3>Historial de Publicaciones:</h3>
+            </div>
             <?php // echo "template pastorales"; ?>
                 <div class="c-agrupaciones">
                   <?php $the_query = new WP_Query(contenidosPorId('page',$pagina_id,-1)); ?>
@@ -56,6 +58,9 @@
                     <div class="list">
                     <div class="todo">
                       <a class="ir-agrupacion" href="<?php the_permalink(); ?>">
+                        <div class="msc-titulo-contenido">
+                          <h5><?php the_title(); ?></h5>
+                        </div>
                         <div class="thumb" >
                       <?php /*==============*/
 
@@ -67,9 +72,14 @@
                       <?php }
                       ?>
                       </div>
-
-                        <?php /*==============*/ ?>
-                        <h5><?php the_title(); ?></h5>
+                      <?php /*
+                      <div class="fecha-publicacion">
+                        <h5><?php
+                        $post_date = get_the_date( 'Y' );
+                        echo $post_date;
+                        ?></h5>
+                      </div>
+                      */ ?>
                       </a>
                       <!-- div class="exe"><?php // excerpt('15'); ?> </div -->
                     </div>

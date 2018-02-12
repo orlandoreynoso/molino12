@@ -1450,6 +1450,163 @@ input[type=number]::-webkit-outer-spin-button {
         .agrupaciones-desglose .c-agrupaciones .list .todo .exe {
           margin-top: 10px; }
 
+.contenido-boletines {
+  box-sizing: border-box; }
+  .contenido-boletines .titulo-desglose-boletines {
+    padding: 20px; }
+    .contenido-boletines .titulo-desglose-boletines h3 {
+      font-family: 'Oswald', sans-serif; }
+  .contenido-boletines .c-agrupaciones {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    box-sizing: border-box; }
+    .contenido-boletines .c-agrupaciones .titulo-pastorales {
+      padding: 10px;
+      width: var(--sizem);
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 30px; }
+      .contenido-boletines .c-agrupaciones .titulo-pastorales h3 {
+        position: relative;
+        margin: auto;
+        --width: 20%;
+        color: #293449;
+        font-weight: bold; }
+        .contenido-boletines .c-agrupaciones .titulo-pastorales h3::after {
+          content: '';
+          display: block;
+          height: 3px;
+          width: calc(var(--width)/2);
+          position: absolute;
+          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2);
+          bottom: -0.8em;
+          background-color: #b20013;
+          z-index: 100; }
+    .contenido-boletines .c-agrupaciones .list {
+      box-sizing: border-box;
+      width: calc(var(--sizem)/4);
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 12px; }
+      @media screen and (max-width: 640px) {
+        .contenido-boletines .c-agrupaciones .list {
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .contenido-boletines .c-agrupaciones .list {
+          width: 33%; } }
+      @media screen and (max-width: 480px) {
+        .contenido-boletines .c-agrupaciones .list {
+          width: 100%; } }
+      @media screen and (max-width: 360px) {
+        .contenido-boletines .c-agrupaciones .list {
+          width: 100%; } }
+      .contenido-boletines .c-agrupaciones .list .infocomunidades {
+        transition: 0.5s ease;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ffffff; }
+        .contenido-boletines .c-agrupaciones .list .infocomunidades:hover {
+          border-bottom: 1px solid #46b271; }
+        .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion {
+          text-decoration: none;
+          transition: 0.5s ease; }
+          .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion:hover {
+            color: #293449; }
+            .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion:hover h5 {
+              color: #293449; }
+          .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb {
+            width: 100%;
+            height: 250px;
+            display: block;
+            padding: 10px; }
+            .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb img {
+              width: 100%;
+              height: 100%;
+              margin: 0px auto;
+              text-align: center;
+              vertical-align: top;
+              display: block; }
+              @media screen and (max-width: 640px) {
+                .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb img {
+                  height: auto; } }
+              .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb img:hover {
+                filter: alpha(opacity=70);
+                -moz-opacity: 1.0;
+                opacity: 0.7;
+                -khml-opacity: 1.0;
+                transition: 0.5s ease; }
+            @media screen and (max-width: 640px) {
+              .contenido-boletines .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb {
+                height: auto;
+                width: 100%; } }
+      .contenido-boletines .c-agrupaciones .list .todo {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease;
+        overflow: hidden;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #009FFF; }
+        .contenido-boletines .c-agrupaciones .list .todo:hover {
+          border-bottom: 1px solid #46b271; }
+        .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion {
+          padding: 5px 5px 10px 5px;
+          display: block;
+          text-decoration: none;
+          transition: 0.5s ease;
+          background-color: #f2f2f2; }
+          .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion:hover {
+            color: #009FFF; }
+            .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion:hover h5 {
+              color: #009FFF; }
+          .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion h5 {
+            font-size: 1em;
+            line-height: 1.5em;
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin-left: 5px;
+            font-weight: 600;
+            color: #46b271; }
+          .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .thumb {
+            width: 100%;
+            height: 125px;
+            display: block; }
+            .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .thumb img {
+              width: 100%;
+              height: 100%;
+              margin: 0px auto;
+              text-align: center;
+              vertical-align: top;
+              display: block; }
+              @media screen and (max-width: 640px) {
+                .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .thumb img {
+                  height: auto; } }
+              .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .thumb img:hover {
+                filter: alpha(opacity=70);
+                -moz-opacity: 1.0;
+                opacity: 0.7;
+                -khml-opacity: 1.0;
+                transition: 0.5s ease; }
+            @media screen and (max-width: 640px) {
+              .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .thumb {
+                height: auto;
+                width: 100%; } }
+          .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .msc-titulo-contenido {
+            padding: 5px;
+            margin-bottom: 10px;
+            height: 50px; }
+            .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .msc-titulo-contenido h5 {
+              font-size: 0.9em;
+              line-height: 1.5em;
+              margin-left: 5px;
+              font-weight: 600;
+              color: #46b271; }
+          .contenido-boletines .c-agrupaciones .list .todo .ir-agrupacion .fecha-publicacion {
+            background-color: red;
+            padding: 10px; }
+        .contenido-boletines .c-agrupaciones .list .todo .exe {
+          margin-top: 10px; }
+
 /*====================*/
 .con-general .con .interiores-comunidad {
   padding-top: 20px; }
