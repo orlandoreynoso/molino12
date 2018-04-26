@@ -92,11 +92,11 @@
                     </div>
                   <?php endwhile; ?>
                   <div class="navigationpresentaciones">
-                    <?php if (function_exists(custom_pagination)) { ?>
+                    <?php // if (function_exists(custom_pagination)) { ?>
                     	<div class="col-sm-12 inner-sm">
                     		<?php custom_pagination_msc($my_query->max_num_pages, "", $paged); ?>
                     	</div>
-                    <?php } ?>
+                    <?php // } ?>
                   </div>
                   <?php
                   /*

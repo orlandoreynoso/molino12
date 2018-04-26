@@ -51,7 +51,7 @@ if ( $the_query->have_posts() ) {
         $the_query->the_post();
         ?>
 <div class="list">
-<a class="thumb" href="<?php the_permalink(); ?>"> 
+<a class="thumb" href="<?php the_permalink(); ?>">
     <?php
         if(has_post_thumbnail()){
         the_post_thumbnail('thumbnail');
@@ -59,7 +59,7 @@ if ( $the_query->have_posts() ) {
         else{ ?>
         <img class="attachment-full size-full wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
 <?php }       ?>
-        
+
 
     </a>
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -139,7 +139,7 @@ if ( $the_query->have_posts() ) {
         $the_query->the_post();
         ?>
 <div class="list">
-<a class="thumb" href="<?php the_permalink(); ?>"> 
+<a class="thumb" href="<?php the_permalink(); ?>">
     <?php
         if(has_post_thumbnail()){
         the_post_thumbnail('thumbnail');
@@ -147,7 +147,7 @@ if ( $the_query->have_posts() ) {
         else{ ?>
         <img class="attachment-full size-full wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
 <?php }       ?>
-        
+
 
     </a>
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

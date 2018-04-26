@@ -27,13 +27,15 @@ Template Name: coverPage mscgt
 
 <?php // get_template_part( 'template/cover', 'slide') ?>
 <section class="m-iparroquial m-gris">
-  <?php //get_template_part( 'template/cover', 'infoparroquial') ?>
-  <?php get_template_part( 'template/cover','seleccionariglesia') ?>
+  <?php // echo "informacion parroquial"; ?>
+  <?php get_template_part( 'template/cover', 'infoparroquial') ?>
+  <?php //get_template_part( 'template/cover','seleccionariglesia') ?>
 </section>
 
-<section class="msc10-espiritualidad">
-  <?php get_template_part( 'template/cover', 'espiritualidad'); ?>
-</section>
+<!-- section class="msc10-espiritualidad">
+  <?php // echo "espiritualidad"; ?>
+  <?php // get_template_part( 'template/cover', 'espiritualidad'); ?>
+</section -->
 
 <section class="m-contenido-secciones">
   <?php get_template_part( 'template/cover', 'contenido') ?>
